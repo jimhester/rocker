@@ -81,6 +81,7 @@ RUN cd /tmp/R-devel \
                --with-readline \
                --without-recommended-packages \
                --program-suffix=dev \
+               --disable-long-double \
 	&& make \
 	&& make install \
 	&& rm -rf /tmp/R-devel
